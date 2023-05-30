@@ -18,7 +18,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("This is index page")
+    return HttpResponse("This is main page")
 
 urlpatterns = [
     path('admin/', admin.site.urls),

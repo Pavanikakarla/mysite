@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("<h1>This is main page</h1>")
+def login(request):
+    context={'msg':'This is login page'}
+    return render(request,'login.html',context)
